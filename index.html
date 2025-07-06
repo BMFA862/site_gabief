@@ -23,14 +23,6 @@
                 </div>
                 <button type="submit" class="btn btn-success btn-lg mt-4">Entrer</button>
             </div>
-            <style>
-    input {
-      font-size: 1.5em;
-      padding: 10px;
-      width: 100%;
-    }
-  </style>
-
         </form>
     </div>
     <!-- Modal Bootstrap -->
@@ -67,7 +59,10 @@
         const input = document.getElementById('motdepasse');
         // Focus sur le container pour déclencher le focus sur l'input caché
         dotsContainer.tabIndex = 0;
-        dotsContainer.addEventListener('click', () => input.focus());
+        dotsContainer.addEventListener('click', () => {
+        input.focus();
+        input.click(); // déclenche le clavier sur certains navigateurs
+        });    
 
         function updateDots() {
             const value = input.value;
