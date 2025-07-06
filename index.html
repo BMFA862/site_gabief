@@ -56,13 +56,11 @@
             dotsContainer.appendChild(dot);
         }
 
-        const input = document.getElementById('motdepasse');
-        // Focus sur le container pour déclencher le focus sur l'input caché
         dotsContainer.tabIndex = 0;
-        dotsContainer.addEventListener('click', () => {
-            this.focus();
-            this.click(); // déclenche le clavier sur certains navigateurs
-        });    
+        dotsContainer.addEventListener('click', function () {
+            input.focus();
+            input.click(); // déclenche le clavier virtuel sur certains navigateurs mobiles
+        });
 
         function updateDots() {
             const value = input.value;
@@ -73,7 +71,7 @@
                     dots[i].style.background = '#ebf62a'; // jaune
                 } else {
                     dots[i].style.background = '';
-                    dots[i].classList.add('bg-dark-subtle'); // gris
+                    dots[i].classList.add('bg-dark-subtle');
                 }
             }
         }
