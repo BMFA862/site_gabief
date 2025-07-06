@@ -48,7 +48,7 @@
         const dotsContainer = document.getElementById('password-dots');
         for (let i = 0; i < DOTS; i++) {
             const dot = document.createElement('span');
-            dot.className = 'mx-2 rounded-circle bg-light';
+            dot.className = 'mx-2 rounded-circle bg-dark-subtle';
             dot.style.width = '20px';
             dot.style.height = '20px';
             dot.style.display = 'inline-block';
@@ -60,8 +60,8 @@
         // Focus sur le container pour déclencher le focus sur l'input caché
         dotsContainer.tabIndex = 0;
         dotsContainer.addEventListener('click', () => {
-        this.focus();
-        this.click(); // déclenche le clavier sur certains navigateurs
+            this.focus();
+            this.click(); // déclenche le clavier sur certains navigateurs
         });    
 
         function updateDots() {
@@ -69,11 +69,11 @@
             const dots = dotsContainer.children;
             for (let i = 0; i < DOTS; i++) {
                 if (i < value.length) {
-                    dots[i].classList.remove('bg-light');
+                    dots[i].classList.remove('bg-dark-subtle');
                     dots[i].style.background = '#ebf62a'; // jaune
                 } else {
                     dots[i].style.background = '';
-                    dots[i].classList.add('bg-light');
+                    dots[i].classList.add('bg-dark-subtle'); // gris
                 }
             }
         }
