@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'MaPolice';
+    src: url('lib/Gliker-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+body {
+    height: 85vh;
+    font-family: 'MaPolice';
+    background: radial-gradient(circle at center, #e9c92c 50%, #ef43ff 100%);
+}
+
+.imgtexte {
+    width: 70vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.imggateau {
+    width: 30vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 100px;
+}
