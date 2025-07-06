@@ -59,9 +59,9 @@
         const input = document.getElementById('motdepasse');
         // Focus sur le container pour déclencher le focus sur l'input caché
         dotsContainer.tabIndex = 0;
-        dotsContainer.addEventListener('click', () => {
-        input.focus();
-        input.click(); // déclenche le clavier sur certains navigateurs
+        dotsContainer.addEventListener('click', function () => {
+        thiss.focus();
+        this.click(); // déclenche le clavier sur certains navigateurs
         });    
 
         function updateDots() {
