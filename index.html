@@ -53,7 +53,7 @@
     </div>
     <script>
         // Génération des points
-        const DOTS = 5;
+        const DOTS = 4;
         const dotsContainer = document.getElementById('password-dots');
         for (let i = 0; i < DOTS; i++) {
             const dot = document.createElement('span');
@@ -93,7 +93,7 @@
         // Vérification du mot de passe à la soumission
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            if (input.value === '84639') {
+            if (input.value === '2212') {
                 window.location.href = 'final.html';
             } else {
                 // Affiche la modal Bootstrap
