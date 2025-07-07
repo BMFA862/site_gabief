@@ -4,30 +4,12 @@
     font-style: normal;
 }
 
-body {
-    height: 85vh;
-    font-family: 'MaPolice';
-    background: radial-gradient(circle at center, #e9c92c 50%, #ef43ff 100%);
-}
-
-.imgtexte {
-    width: 70vh;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.imggateau {
-    width: 30vh;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+#container {
+    background: radial-gradient(circle at center, #e9c92c 50%, #ef43ff 100%);   
 }
 
 h1 {
-    text-align: center;
+    font-family: 'MaPolice';
     letter-spacing: 3px;
-    color: #ffffff;
     font-size: 50px;
-    margin-top: 100px;
 }
